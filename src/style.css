@@ -1,5 +1,17 @@
+:root {
+    --text-primary: #363E45;
+    --w: white;
+    --text-secondary: rgba(54, 62, 69, 0.64);
+    --border-secondary: rgba(152, 163, 174, 0.48);
+    --radius: 0.5rem;
+    --v-gap: 120px;
+
+    font-size: 16px;
+}
+
 * {
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 html, body {
@@ -29,20 +41,14 @@ img {
     border: 0;
 }
 
-:root {
-    --text-primary: #363E45;
-    --w: white;
-    --text-secondary: rgba(54,62,69,.64);
-    --border-secondary: rgba(152,163,174,.48);
-    --radius: 0.5rem;
-    --v-gap: 120px;
-    font-size: 16px;
-}
-
 body {
     background: var(--w);
     color: var(--text-primary);
-    font: 400 1rem/1.5rem Arial, sans-serif;
+    /*font: 400 1rem/1.5rem Arial, sans-serif;*/
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
     display: flex;
     flex: 1;
     flex-flow: column;
@@ -53,7 +59,7 @@ body {
 
 .Content {
     width: 1140px;
-    min-height: 1790px;
+    height: 1790px;
     display: flex;
     flex-direction: column;
     gap: var(--v-gap);
@@ -66,8 +72,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1.5rem;
-    padding: 1.5rem 0;
+    gap: 40px;
+    padding: 40px 0;
 }
 
 #header .logo {
@@ -85,31 +91,34 @@ body {
 .btn-group {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 8px;
 }
 
 .btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-height: 3rem;
-    padding: 1rem 1.25rem;
+    padding: 16px 20px;
     border: 1px solid rgba(152,163,174,.48);
-    border-radius: 0.5rem;
+    border-radius: 8px;
     background: var(--w);
     color: var(--text-primary);
-    font: 400 0.875rem/1rem Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
     text-decoration: none;
 }
 
 #about {
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 40px;
 }
 
 .hero-title{
-    font: 400 3rem/3.625rem Arial, sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
 }
 
 .hero-image img{
@@ -129,7 +138,9 @@ body {
     list-style: none;
 }
 
-#experience .filters li{ list-style:none; }
+#experience .filters li{
+    list-style:none;
+}
 
 #experience .filters .btn{
     display: inline-flex;
@@ -141,7 +152,9 @@ body {
     border-radius: 8px;
     background: var(--w);
     color: var(--text-primary);
-    font: 300 14px/16px Arial, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
     text-decoration: none;
     box-sizing: border-box;
 }
@@ -186,29 +199,40 @@ body {
 }
 
 .section-title {
-    font: 300 48px/48px Arial, sans-serif;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 48px;
+
     margin-bottom: 40px;
     color: var(--text-primary);
 }
 
 .kvs__title {
-    font: 300 20px/24px Arial, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
     color: var(--text-primary);
 }
 
 .kvs__meta {
-    font: 300 16px/24px Arial, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
     color: var(--text-secondary);
     margin-bottom: 8px;
 }
 
 .kvs__meta_time {
-    font: 300 16px/24px Arial, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
     color: var(--text-primary);
 }
 
 .lead {
-    font: 300 16px/24px Arial, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
     color: var(--text-secondary);
 }
 
@@ -289,8 +313,11 @@ body {
 }
 
 #footer .copyright {
-    font: 400 14px/16px Arial, sans-serif;
-    color: rgba(54, 62, 69, 0.64);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: var(--text-secondary);
     margin: 0;
 }
 
