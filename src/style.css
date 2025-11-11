@@ -3,7 +3,7 @@
     --w: white;
     --text-secondary: rgba(54, 62, 69, 0.64);
     --border-secondary: rgba(152, 163, 174, 0.48);
-    --radius: 0.5rem;
+    --radius: 8px;
     --v-gap: 120px;
 
     font-size: 16px;
@@ -98,7 +98,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 16px 20px;
-    border: 1px solid rgba(152,163,174,.48);
+    border: 1px solid var(--border-secondary);
     border-radius: 8px;
     background: var(--w);
     color: var(--text-primary);
@@ -147,7 +147,7 @@ body {
     justify-content: center;
     height: 48px;
     padding: 16px 20px;
-    border: 1px solid rgba(152,163,174,.48);
+    border: 1px solid var(--border-secondary);
     border-radius: 8px;
     background: var(--w);
     color: var(--text-primary);
@@ -186,7 +186,7 @@ body {
     gap: 16px;
 }
 
-.kvs {
+.job {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -206,14 +206,14 @@ body {
     color: var(--text-primary);
 }
 
-.kvs__title {
+.job__title {
     font-weight: 300;
     font-size: 20px;
     line-height: 24px;
     color: var(--text-primary);
 }
 
-.kvs__meta {
+.job__meta {
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
@@ -221,7 +221,7 @@ body {
     margin-bottom: 8px;
 }
 
-.kvs__meta_time {
+.job__meta_time {
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
@@ -262,51 +262,21 @@ body {
 }
 
 #footer .social li {
-    display: flex;
-    align-items: center;
     justify-content: center;
-}
-
-#footer .social li:nth-child(1) {
-    width: 20px;
-    height: 20px;
-}
-
-#footer .social li:nth-child(2) {
-    width: 24px;
-    height: 24px;
-}
-
-#footer .social li:nth-child(3) {
-    width: 20px;
-    height: 20px;
-}
-
-#footer .social li:nth-child(4) {
-    width: 24px;
-    height: 24px;
 }
 
 #footer .social img {
     display: block;
 }
 
-#footer .social li:nth-child(1) img {
+#footer .social li:nth-child(1) img,
+        .social li:nth-child(3) img {
     width: 20px;
     height: 20px;
 }
 
-#footer .social li:nth-child(2) img {
-    width: 24px;
-    height: 24px;
-}
-
-#footer .social li:nth-child(3) img {
-    width: 20px;
-    height: 20px;
-}
-
-#footer .social li:nth-child(4) img {
+#footer .social li:nth-child(2) img,
+        .social li:nth-child(4) img {
     width: 24px;
     height: 24px;
 }
