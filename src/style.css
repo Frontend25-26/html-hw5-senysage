@@ -31,6 +31,7 @@ img {
 
 :root {
     --text-primary: #363E45;
+    --w: white;
     --text-secondary: rgba(54,62,69,.64);
     --border-secondary: rgba(152,163,174,.48);
     --radius: 0.5rem;
@@ -39,7 +40,7 @@ img {
 }
 
 body {
-    background: #fff;
+    background: var(--w);
     color: var(--text-primary);
     font: 400 1rem/1.5rem Arial, sans-serif;
     display: flex;
@@ -83,7 +84,7 @@ body {
 
 .btn-group {
     display: flex;
-    align-items:  center;
+    align-items: center;
     gap: 0.5rem;
 }
 
@@ -95,8 +96,8 @@ body {
     padding: 1rem 1.25rem;
     border: 1px solid rgba(152,163,174,.48);
     border-radius: 0.5rem;
-    background: #FFFFFF;
-    color: #363E45;
+    background: var(--w);
+    color: var(--text-primary);
     font: 400 0.875rem/1rem Arial, sans-serif;
     text-decoration: none;
 }
@@ -119,40 +120,40 @@ body {
 }
 
 #experience .filters{
-    display:flex;
-    align-items:center;
-    gap:8px;
-    width:fit-content;
-    height:48px;
-    margin-bottom:40px;
-    list-style:none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    height: 48px;
+    margin-bottom: 40px;
+    list-style: none;
 }
 
 #experience .filters li{ list-style:none; }
 
 #experience .filters .btn{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    height:48px;
-    padding:16px 20px;
-    border:1px solid rgba(152,163,174,.48);
-    border-radius:8px;
-    background:#fff;
-    color:#363E45;
-    font:300 14px/16px Arial, sans-serif;
-    text-decoration:none;
-    box-sizing:border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    padding: 16px 20px;
+    border: 1px solid rgba(152,163,174,.48);
+    border-radius: 8px;
+    background: var(--w);
+    color: var(--text-primary);
+    font: 300 14px/16px Arial, sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
 }
 
 #experience .filters li:nth-child(1) .btn{
-    width:84px;
+    width: 84px;
 }
 #experience .filters li:nth-child(2) .btn{
-    width:117.6px;
+    width: 117.6px;
 }
 #experience .filters li:nth-child(3) .btn{
-    width:109.2px;
+    width: 109.2px;
 }
 
 #experience .filters .btn:hover,
@@ -187,12 +188,12 @@ body {
 .section-title {
     font: 300 48px/48px Arial, sans-serif;
     margin-bottom: 40px;
-    color: #363E45;
+    color: var(--text-primary);
 }
 
 .kvs__title {
     font: 300 20px/24px Arial, sans-serif;
-    color: #363E45;
+    color: var(--text-primary);
 }
 
 .kvs__meta {
@@ -265,8 +266,6 @@ body {
 
 #footer .social img {
     display: block;
-    /*image-rendering: crisp-edges;*/
-    /*image-rendering: -webkit-optimize-contrast;*/
 }
 
 #footer .social li:nth-child(1) img {
