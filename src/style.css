@@ -256,10 +256,6 @@ body {
     justify-content: center;
 }
 
-#footer .social img {
-    display: block;
-}
-
 #footer .social li:nth-child(1) {
     width: 20px;
     height: 20px;
@@ -280,13 +276,25 @@ body {
     height: 24px;
 }
 
-#footer .social li:nth-child(1) img,
+#footer .social img {
+    display: block;
+}
+
+#footer .social li:nth-child(1) img {
+    width: 20px;
+    height: 20px;
+}
+
 #footer .social li:nth-child(3) img {
     width: 20px;
     height: 20px;
 }
 
-#footer .social li:nth-child(2) img,
+#footer .social li:nth-child(2) img {
+    width: 24px;
+    height: 24px;
+}
+
 #footer .social li:nth-child(4) img {
     width: 24px;
     height: 24px;
