@@ -3,7 +3,7 @@
     --w: white;
     --text-secondary: rgba(54, 62, 69, 0.64);
     --border-secondary: rgba(152, 163, 174, 0.48);
-    --radius: 0.5rem;
+    --radius: 8px;
 
     font-size: 16px;
 }
@@ -142,7 +142,7 @@ body {
 #experience .filters .btn {
     height: 48px;
     padding: 16px 20px;
-    border: 1px solid var(--border-secondary);
+    border: 1px solid rgba(152,163,174,.48);
     border-radius: var(--radius);
     background: var(--w);
     color: var(--text-primary);
