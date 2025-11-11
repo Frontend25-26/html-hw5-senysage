@@ -3,7 +3,7 @@
     --w: white;
     --text-secondary: rgba(54, 62, 69, 0.64);
     --border-secondary: rgba(152, 163, 174, 0.48);
-    --radius: 0.5rem;
+    --radius: 8px;
 
     font-size: 16px;
 }
