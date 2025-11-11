@@ -261,13 +261,13 @@ body {
 }
 
 #footer .social li:nth-child(1) img,
-        .social li:nth-child(3) img {
+#footer .social li:nth-child(3) img {
     width: 20px;
     height: 20px;
 }
 
 #footer .social li:nth-child(2) img,
-        .social li:nth-child(4) img {
+#footer .social li:nth-child(4) img {
     width: 24px;
     height: 24px;
 }
